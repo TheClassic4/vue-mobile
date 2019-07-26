@@ -1,6 +1,6 @@
 # Vue.js
 ### vue项目proxyTable配置
-在localhost环境下跑项目时，接口地址是 http://xxxx.com/save/index 这样的接口地址，我们这样直接使用会存在跨域的请求，导致接口请求不成功，我们进入 config/index.js 代码下如下配置即可  
+在localhost环境下跑项目时，接口地址是 http://xxxx.com/save/index 这样的接口地址，我们这样直接使用会存在跨域的请求，导致接口请求不成功，我们进入 config/index.js代码下如下配置即可  
 下面的代码就是将本地的8080的端口代理到www.abc.com上，即写api就会直接访问 http://www.abc.com
 ```
 dev: {
