@@ -1,11 +1,13 @@
 <template>
   <div class="home">
- <base-tabbar/>
+    <base-collapse/>
+    <base-tabbar/>
   </div>
 </template>
 
 <script>
   import BaseTabbar from "@/components/BaseTabbar";
+  import BaseCollapse from "@/components/BaseCollapse";
   export default {
     name: 'home',
     data () {
@@ -13,7 +15,7 @@
        
       };
     },
-    components: {BaseTabbar},
+    components: {BaseTabbar, BaseCollapse},
     methods: {
       
     }

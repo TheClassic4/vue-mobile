@@ -1,10 +1,10 @@
 <template>
   <div class="baseTabbar">
     <van-tabbar route>
-      <van-tabbar-item replace to="/home" icon="bars">概况</van-tabbar-item>
-      <van-tabbar-item replace to="/projectStrategy" icon="label">项目/战略</van-tabbar-item>
-      <van-tabbar-item replace to="/product" icon="bag">产品</van-tabbar-item>
-      <van-tabbar-item replace to="/financialStaff" icon="friends">财务/员工</van-tabbar-item>
+      <van-tabbar-item replace to="/home" icon="bars"></van-tabbar-item>
+      <van-tabbar-item replace to="/projectStrategy" icon="label"></van-tabbar-item>
+      <van-tabbar-item replace to="/product" icon="bag"></van-tabbar-item>
+      <van-tabbar-item replace to="/financialStaff" icon="friends"></van-tabbar-item>
     </van-tabbar>
   </div>
 
