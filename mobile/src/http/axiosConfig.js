@@ -9,7 +9,9 @@ const http = axios.create({
 });
 http.interceptors.request.use(
   (config) => {
-    const { token } = getLoginInfo();
+    // const { token } = getLoginInfo();
+    const token = JSON.parse(sessionStorage.getItem('TOKEN'));
+      config.params.memberName = store.state.pageStore.currentVal || 'mina';
     token && (config.headers.token = token);
     return config;
   },

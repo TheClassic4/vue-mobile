@@ -18,6 +18,7 @@
   </div>
 </template>
 <script>
+import { isEmpty } from "@/helper";
 export default {
   data () {
     return {
@@ -28,6 +29,9 @@ export default {
   },
   mounted() {
     this.getNameInfo();
+    this.selectedValue = !isEmpty(localStorage.getItem("memberName"))
+      ? localStorage.getItem("memberName")
+      : "";
   },
   watch: {
     activeNames(newFlag, oldFlag) {
@@ -41,6 +45,8 @@ export default {
   methods: {
     getNameInfo() {
       this.namelist.push("mina", "chaeyoung" ,"momo", "nayeon");
+      //set了memberName初始值
+      localStorage.setItem("memberName", this.namelist[0]);
     },
     onClose() {
       this.activeNames = "0";
@@ -48,6 +54,7 @@ export default {
     onClick(record) {
       this.selectedValue = record;
       this.activeNames = "0"
+      localStorage.setItem("memberName", record);
     }
   }   
 }
@@ -93,6 +100,7 @@ export default {
         font-weight: 400;
       }
       &:first-child {
+        //第一个子元素上方产生阴影
         box-shadow: 0px 5px 5px rgba(74, 98, 231, 0.15) inset;
       }
       color: #4e4667;
