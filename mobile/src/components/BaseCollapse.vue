@@ -13,8 +13,8 @@
           </ul>
         </van-collapse-item>
       </van-collapse>
-      <div class="gap"></div>
     </div>
+    <div class="gap"></div>
   </div>
 </template>
 <script>
@@ -125,5 +125,8 @@ export default {
     color: rgba(143, 143, 143, 1);
     line-height: 13px;
   }
+}
+.gap {
+  height: 76px;
 }
 </style>
