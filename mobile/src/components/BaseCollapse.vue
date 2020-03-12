@@ -45,7 +45,7 @@ export default {
   methods: {
     getNameInfo() {
       this.namelist.push("mina", "chaeyoung" ,"momo", "nayeon");
-      //set了memberName初始值
+      //set了memberName初始值,页面其它地方的接口通过获取localStorage.getItem获取参数
       localStorage.setItem("memberName", this.namelist[0]);
     },
     onClose() {
