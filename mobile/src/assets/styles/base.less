@@ -55,3 +55,63 @@ body {
   border-radius: 12px;
   background-color: #fff;
 }
+// 进度条
+.circleProgress {
+  .van-progress__portion {
+  .van-progress__pivot {
+background: white !important;
+border-radius: 50%;
+height: 15px;
+min-width: 15px;
+line-height: 15px;
+font-size: 0;
+padding: 0;
+border: 3px solid #5AB3F6;
+margin-left: -2px;
+box-shadow:0px 4px 18px 0px rgba(74,98,231,0.15) !important;
+}
+}
+}
+.lineProgres {
+  .van-progress {
+    padding: 6px;
+    border-radius: 0;
+    line-height: 8px;
+    background:linear-gradient(90deg,rgba(235,247,247,0.82) 0%,rgba(218,230,255,0.5) 100%) !important;
+    .van-progress__portion {
+      height: 4px !important;
+      background:linear-gradient(270deg,rgba(74,99,231,1) 0%,rgba(99,196,241,1) 100%) !important;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .van-progress__pivot {
+    display: none;
+  }
+  .projectProgres{
+    .van-progress {
+      margin-bottom: 17px!important;
+      border-radius: 0;
+      line-height: 4px;
+      background:linear-gradient(90deg,rgba(235,247,247,0.82) 0%,rgba(218,230,255,0.5) 100%) !important;
+      .van-progress__portion {
+        height: 4px !important;
+        background:#4A5EE7;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .van-progress__pivot {
+      display: none;
+    }
+    .van-progress__portion{
+      &:before{
+        content:"|";
+        position: absolute;
+        right: -1px;
+        color: #FF5C5C;
+         
+      }
+    }
+  }
+}
