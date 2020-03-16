@@ -99,7 +99,7 @@
             "amount":"9540000",
             "companyName":"KBS"
           },
-                  {
+          {
             "amount":"7920000",
             "companyName":"Melon"
           },
